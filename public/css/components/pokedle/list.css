@@ -1,0 +1,119 @@
+.pokedle-list {
+   width: 100%;
+
+   display: none;
+   flex-direction: column;
+   gap: 2rem;
+
+   font-size: 1.2rem;
+   font-weight: 700;
+}
+
+.pokedle-list.show {
+   display: flex;
+}
+
+.pokedle-element {
+   width: 100%;
+
+   display: grid;
+   grid-template-columns: repeat(9, 1fr);
+   gap: 1rem;
+
+   text-align: center;
+}
+
+.pokedle-element > div {
+   aspect-ratio: 1 / 1;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   width: 100%;
+}
+
+.pokedle-header {
+   color: var(--white);
+}
+
+.pokedle-header > div {
+   border-bottom: 0.5rem solid var(--white);
+}
+
+.pokedle-try {
+   font-size: 1rem;
+}
+
+.pokedle-try > div {
+   border: 0.3rem solid var(--black);
+   border-radius: 0.5rem;
+}
+
+.pokedle-try > div > p {
+   word-break: break-all;
+}
+
+.pokedle-img {
+   background-color: var(--white);
+}
+
+.pokedle-img > img {
+   object-fit: contain;
+   width: 100%;
+}
+
+.green {
+   background-color: var(--try-green);
+}
+
+.yellow {
+   background-color: var(--try-yellow);
+}
+
+.red {
+   background-color: var(--try-red);
+}
+
+.up {
+   background-color: var(--try-red);
+
+   position: relative;
+}
+
+.up::before {
+   content: "\f30c";
+}
+
+.down {
+   background-color: var(--try-red);
+
+   position: relative;
+}
+
+.down::before {
+   content: "\f309";
+}
+
+.up::before, .down::before {
+   position: absolute;
+   inset: 0;
+
+   font-family: "Font Awesome 6 Free";
+   font-size: 6rem;
+   font-weight: 900;
+
+   -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+   display: var(--fa-display, inline-block);
+   font-style: normal;
+   font-variant: normal;
+   line-height: 1;
+   text-rendering: auto;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   color: rgba(0, 0, 0, 0.25);
+}

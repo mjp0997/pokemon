@@ -1,0 +1,41 @@
+.pokedle-help {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+
+   background-color: var(--blue);
+
+   border: 0.7rem solid var(--dark-blue);
+   border-radius: 0.5rem;
+
+   padding: 1rem;
+   margin: 0 10%;
+}
+
+.pokedle-help > p {
+   text-align: center;
+
+   color: var(--white);
+}
+
+.pokedle-indicators {
+   margin: 0 10%;
+   
+   display: grid;
+   grid-template-columns: repeat(5, calc(20% - 1.6rem));
+   gap: 2rem;
+}
+
+.pokedle-indicators > li {
+   font-size: 1rem;
+   text-align: center;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   border: 0.3rem solid var(--black);
+   border-radius: 0.5rem;
+
+   aspect-ratio: 1 / 1;
+}

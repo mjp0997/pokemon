@@ -1,0 +1,22 @@
+@font-face {
+   font-family: 'gba-font';
+   src: url('../fonts/Pokemon GB.ttf');
+}
+
+:root {
+   --black: #252525;
+
+   --red: #EE222B;
+   --dark-red: #8F393A;
+
+   --blue: #294E68;
+   --dark-blue: #1A3648;
+
+   --white: #FFFFFF;
+
+   --try-green: #45F395;
+   --try-yellow: #F3DB45;
+   --try-red: #F36445;
+
+   --modal-index: 10;
+}

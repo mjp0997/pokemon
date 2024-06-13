@@ -1,0 +1,47 @@
+html {
+   box-sizing: border-box;
+
+   /* 1rem = 10px */
+   font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+   box-sizing: inherit;
+
+   margin: 0;
+   padding: 0;
+   border: none;
+   outline: none;
+}
+
+body {
+   font-family: 'gba-font', Verdana, Geneva, Tahoma, sans-serif;
+
+   font-size: 1.6rem;
+   
+   min-height: 100vh;
+
+   display: flex;
+   flex-direction: column;
+}
+
+ul {
+   list-style: none;
+}
+
+.modal-backdrop {
+   display: none;
+
+   position: fixed;
+   inset: 0;
+
+   background-color: rgba(0, 0, 0, 0.5);
+
+   z-index: calc(var(--modal-index) - 1);
+}
+
+.modal-backdrop.show {
+   display: initial;
+}
