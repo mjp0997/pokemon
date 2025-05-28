@@ -12,7 +12,7 @@ class PokedexController extends Controller
     {
         $pokemons = Pokemon::with('types', 'stats', 'habitat', 'color', 'abilities')->get();
 
-        $pokemons = collect($pokemons)->map(function ($pokemon) {
+        $pokemons = collect($pokemons)->map(function (Pokemon $pokemon) {
             return $this->format_pokemon($pokemon);
         })->toArray();
 
